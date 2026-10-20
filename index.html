@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Numill Sky — fly around the Numill logo</title>
+<link rel="icon" href="./favicon.png">
+<style>html,body{color:#e6fbff;touch-action:none;-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;background:#0b0d16;height:100%;margin:0;font-family:-apple-system,system-ui,Segoe UI,Roboto,sans-serif;overflow:hidden}canvas{display:block}#ui{top:max(10px,env(safe-area-inset-top));z-index:5;flex-wrap:wrap;justify-content:center;gap:6px;width:max-content;max-width:96vw;display:flex;position:fixed;left:50%;transform:translate(-50%)}button{-webkit-backdrop-filter:blur(8px);color:#e6fbff;cursor:pointer;background:#0f1e2d8c;border:1px solid #6edcf059;border-radius:999px;padding:8px 13px;font-size:13px}button.on{color:#021;background:linear-gradient(90deg,#2fd39a,#3a8dff);border-color:#0000;font-weight:600}#help{left:50%;bottom:max(12px,env(safe-area-inset-bottom));opacity:.75;text-align:center;text-shadow:0 1px 3px #000;max-width:92vw;font-size:12px;position:fixed;transform:translate(-50%)}#title{left:14px;top:max(14px,env(safe-area-inset-top));letter-spacing:.2em;opacity:.7;font-size:12px;position:fixed}#fps{right:12px;top:max(14px,env(safe-area-inset-top));opacity:.5;font-size:11px;position:fixed}#joy{z-index:6;touch-action:none;background:#14323c40;border:1px solid #78e6f073;border-radius:50%;width:120px;height:120px;display:none;position:fixed;bottom:60px;left:26px}#knob{background:linear-gradient(135deg,#2fd39a,#3a8dff);border-radius:50%;width:40px;height:40px;position:absolute;top:40px;left:40px;box-shadow:0 0 18px #3ad0ff}#thr{z-index:6;flex-direction:column;gap:10px;display:none;position:fixed;bottom:70px;right:22px}#thr button{border-radius:50%;width:56px;height:56px;padding:0;font-size:22px}#loading{letter-spacing:.2em;opacity:.8;justify-content:center;align-items:center;font-size:14px;display:flex;position:fixed;inset:0}</style>  <script type="module" crossorigin src="./assets/index-BvZzxDdz.js"></script>
+</head><body>
+<div id="loading">LOADING NUMILL SKY…</div>
+<div id="title">NUMILL SKY</div><div id="fps"></div>
+<div id="ui">
+  <button id="mFloat" class="on">☁ Float</button>
+  <button id="mFly">✈ Fly</button>
+  <button id="mOrbit">◎ Orbit logo</button>
+  <button id="bReset">⌂ Reset</button>
+  <button id="bTilt" style="display:none">📱 Tilt</button>
+  <button id="bSound">🔇 Sound</button>
+  <button id="bFull">⛶ Fullscreen</button>
+</div>
+<div id="joy"><div id="knob"></div></div>
+<div id="thr"><button id="tUp">＋</button><button id="tDn">－</button></div>
+<div id="help"></div>
+</body></html>
